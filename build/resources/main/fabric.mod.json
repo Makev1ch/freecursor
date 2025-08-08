@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "freecursor",
+  "version": "1.0.5",
+  "name": "Free Cursor",
+  "description": "Мод для управления привязкой курсора к окну Minecraft",
+  "authors": [
+    "Your Name"
+  ],
+  "contact": {
+    "homepage": "https://github.com/yourusername/freecursor",
+    "sources": "https://github.com/yourusername/freecursor"
+  },
+  "license": "GPL-2.0",
+  "icon": "assets/freecursor/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.example.freecursor.FreeCursorMod"
+    ]
+  },
+  "mixins": [
+    "freecursor.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.7",
+    "minecraft": "~1.21.4",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "package": "com.example.freecursor.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "MinecraftClientMixin",
+    "GameOptionsMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
