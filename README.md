@@ -1,27 +1,29 @@
 # Free Cursor Mod
 
-Мод для освобождения курсора в Minecraft.
+A Minecraft mod that lets you quickly release and recapture the mouse cursor.
 
-## Использование
+## Usage
 
-- Нажмите F6 для освобождения курсора
-- Кликните мышью или нажмите ESC для возврата в игру
-- Настройте клавишу в меню управления Minecraft
+- Press F6 to release the cursor
+- Click the mouse or press ESC to return to the game
+- Rebind the key in the Minecraft Controls menu if needed
 
-## Установка
+## Installation
 
-1. Установите Fabric Loader для Minecraft 1.21.4
-2. Поместите JAR файл в папку `mods`
-3. Запустите игру
+1. Install Fabric Loader for Minecraft 1.21.4
+2. Put the JAR file into the `mods` folder
+3. Launch the game
 
-## Сборка
+## Build
 
-```bash
-./gradlew build
-```
+- Linux/macOS:
+  ```bash
+  ./gradlew build
+  ```
 
-Готовый JAR файл: `build/libs/freecursor-1.0.5.jar`
+- Windows (CMD or PowerShell):
+  ```bat
+  gradlew.bat build
+  ```
 
-## Лицензия
-
-Этот проект распространяется под лицензией GNU General Public License v2.0.
+The built JAR will be located at: `build/libs/freecursor-1.0.5.jar`.
