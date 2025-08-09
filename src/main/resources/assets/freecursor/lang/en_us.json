@@ -1,0 +1,13 @@
+{
+  "key.freecursor.toggle": "Free Cursor",
+  "key.freecursor.config": "Open FreeCursor Config",
+  "category.freecursor": "FreeCursor",
+  "screen.freecursor.title": "FreeCursor",
+  "screen.freecursor.instruction": "Cursor is now free! Click or press ESC to return to game",
+  "config.freecursor.title": "FreeCursor Config",
+  "config.freecursor.category.general": "General",
+  "config.freecursor.simulate_f1": "Simulate F1",
+  "config.freecursor.simulate_f1.tooltip": "Hide HUD elements when cursor is freed, just like pressing F1",
+  "config.freecursor.disable_blur": "Disable Blur",
+  "config.freecursor.disable_blur.tooltip": "Remove background blur when cursor is freed, restoring original blur when returning to game"
+}

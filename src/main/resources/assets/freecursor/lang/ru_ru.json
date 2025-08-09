@@ -1,0 +1,13 @@
+{
+  "key.freecursor.toggle": "Освободить курсор",
+  "key.freecursor.config": "Открыть настройки FreeCursor",
+  "category.freecursor": "FreeCursor",
+  "screen.freecursor.title": "FreeCursor",
+  "screen.freecursor.instruction": "Курсор освобожден! Кликните или нажмите ESC для возврата в игру",
+  "config.freecursor.title": "Настройки FreeCursor",
+  "config.freecursor.category.general": "Основные",
+  "config.freecursor.simulate_f1": "Имитировать F1",
+  "config.freecursor.simulate_f1.tooltip": "Скрывать элементы интерфейса при освобождении курсора, как при нажатии F1",
+  "config.freecursor.disable_blur": "Отключить размытие",
+  "config.freecursor.disable_blur.tooltip": "Убирать размытие фона при освобождении курсора, восстанавливая исходное размытие при возврате в игру"
+}

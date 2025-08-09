@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "freecursor",
+  "version": "${version}",
+  "name": "FreeCursor",
+  "description": "Мод для освобождения курсора по нажатию установленной клавиши. Позволяет освободить курсор мыши и вернуть его обратно в игру.",
+  "authors": [
+    "Makev1ch",
+    "Igr0man1y3_2"
+  ],
+  "contact": {
+    "homepage": "https://github.com/Makev1ch/freecursor",
+    "sources": "https://github.com/Makev1ch/freecursor",
+    "issues": "https://github.com/Makev1ch/freecursor/issues"
+  },
+  "license": "GPL-2.0-only",
+  "icon": "assets/freecursor/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.makev1ch.freecursor.FreeCursor"
+    ],
+    "client": [
+      "com.makev1ch.freecursor.FreeCursorClient"
+    ],
+    "modmenu": [
+      "com.makev1ch.freecursor.FreeCursorModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "freecursor.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.4",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "modmenu": "*"
+  }
+}
