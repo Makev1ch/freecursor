@@ -12,43 +12,30 @@
 
 ## Installation
 
-    Requires:
-        Fabric Loader + Fabric API.
-        Optional: ModMenu (for GUI settings).
-    Steps:
-        Place .jar in mods folder.
-        Launch Minecraft.
+Requires:
+
+   - Fabric Loader + Fabric API.
+
+   - Optional: ModMenu (for GUI settings).
 
 ## Usage
 
-1. Press **F6** (or your configured key) during gameplay
-2. The cursor will be freed and you can move it outside the game window
+1. Press **F6** (or your configured key) → cursor unlocks.
+
 3. To return to the game:
    - Click **Left Mouse Button** anywhere
    - Or press **ESC**
 
 ## Configuration
 
-### Key Bindings
-To change keys:
-1. Open **Settings** → **Controls**
-2. Find the **FreeCursor** category
-3. Set your desired keys:
-   - **Free Cursor** (default: F6) - Release cursor
-   - **Open FreeCursor Config** (default: N) - Open mod settings
+### Key Rebinds
+   - Settings > Controls > FreeCursor category.
 
 ### Mod Settings
 Access mod settings in two ways:
 
-#### Option 1: Built-in Config (No ModMenu required)
-1. Press **N** key (or your configured key) during gameplay
-2. Built-in settings screen will open
-3. Toggle settings and press **Done**
-
-#### Option 2: ModMenu Integration (if ModMenu is installed)
-1. Install [ModMenu](https://modrinth.com/mod/modmenu)
-2. Open **Mods** menu in game
-3. Find **FreeCursor** and click **Configure**
+   - Press N (default) in-game for built-in config, or
+   - Use ModMenu (if installed) to configure.
 
 #### Available Settings:
 - **Simulate F1**: Hide HUD elements when cursor is freed (just like pressing F1)
