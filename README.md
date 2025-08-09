@@ -12,16 +12,12 @@
 
 ## Installation
 
-### Requirements
-- **[Fabric API](https://modrinth.com/mod/fabric-api)** (Required)
-- **[ModMenu](https://modrinth.com/mod/modmenu)** (Optional - for in-game configuration)
-
-### Steps
-1. Make sure you have [Fabric Loader](https://fabricmc.net/use/) installed
-2. Install **Fabric API**
-3. Download the latest version of the mod
-4. Place the jar file in your Minecraft `mods` folder
-5. Start the game!
+    Requires:
+        Fabric Loader + Fabric API.
+        Optional: ModMenu (for GUI settings).
+    Steps:
+        Place .jar in mods folder.
+        Launch Minecraft.
 
 ## Usage
 
