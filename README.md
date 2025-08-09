@@ -16,7 +16,9 @@ Requires:
 
    - Fabric Loader + Fabric API.
 
-   - Optional: ModMenu (for GUI settings).
+Optional: 
+
+   - ModMenu (for GUI settings).
 
 ## Usage
 
