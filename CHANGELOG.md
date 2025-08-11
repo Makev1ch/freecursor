@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.0+mc1.21.4] - 2024-08-09
+
+### Fixed
+- **Nether Portal Compatibility**: FreeCursor now works properly when player is in Nether portal
+- **Game Screen Detection**: Enhanced screen detection to work with portal, loading, and transition screens
+- **Universal Accessibility**: Mod now functions in all game states including dimensional transitions
+
+### Technical
+- Added `isGameScreen()` method for intelligent screen detection
+- Improved compatibility with Minecraft's internal screen system
+- Enhanced portal and loading screen support
+
+### Changed
+- **Version Bump**: Upgraded from 1.1.9 to 1.2.0 for better versioning
+- **Screen Logic**: FreeCursor now activates in more game situations
+
 ## [1.1.9+mc1.21.4] - 2024-08-09
 
 ### Changed

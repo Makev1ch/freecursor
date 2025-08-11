@@ -32,7 +32,7 @@ public class FreeCursorClient implements ClientModInitializer {
         
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
             while (freeCursorKey.wasPressed()) {
-                if (client.currentScreen == null) {
+                if (client.currentScreen == null || isGameScreen(client.currentScreen)) {
                     FreeCursorConfig config = FreeCursorConfig.getInstance();
                     
                     boolean originalHideGui = client.options.hudHidden;
@@ -59,5 +59,17 @@ public class FreeCursorClient implements ClientModInitializer {
     
     public static KeyBinding getFreeCursorKey() {
         return freeCursorKey;
+    }
+    
+    private static boolean isGameScreen(net.minecraft.client.gui.screen.Screen screen) {
+        if (screen == null) return false;
+        
+        String screenClass = screen.getClass().getSimpleName();
+        
+        return screenClass.contains("NetherPortal") || 
+               screenClass.contains("Portal") ||
+               screenClass.contains("Loading") ||
+               screenClass.contains("Progress") ||
+               screenClass.contains("Transition");
     }
 }

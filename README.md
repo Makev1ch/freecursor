@@ -9,6 +9,7 @@
 - ↩️ **Easy Return**: Click LMB or press ESC to return to the game
 - 🌍 **Localization**: Support for Russian and English languages
 - ⚡ **Client-side Only**: No server installation required
+- 🚪 **Portal Compatible**: Works even in Nether portals and loading screens
 
 ## Installation
 
