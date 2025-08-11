@@ -1,13 +1,12 @@
 {
   "required": true,
-  "package": "com.makev1ch.freecursor.mixin",
-  "compatibilityLevel": "JAVA_17",
-  "refmap": "freecursor.refmap.json",
-  "mixins": [
-  ],
-  "client": [
-  ],
   "injectors": {
     "defaultRequire": 1
-  }
+  },
+  "compatibilityLevel": "JAVA_21",
+  "package": "com.makev1ch.freecursor.mixin",
+  "client": [
+    "PortalMixin"
+  ],
+  "refmap": "client-freecursor.refmap.json"
 }

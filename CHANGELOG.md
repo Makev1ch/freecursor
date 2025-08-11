@@ -2,6 +2,99 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.9+mc1.21] - 2025-08-11
+### Fixed
+- В `freecursor.mixins.json` исправлено имя refmap на `client-freecursor.refmap.json`
+
+## [1.2.8+mc1.21] - 2025-08-11
+### Fixed
+- Сборка: удалён ручной `annotationProcessor`; генерация refmap теперь через Loom (`defaultRefmapName`)
+
+## [1.2.7+mc1.21] - 2025-08-11
+### Fixed
+- Сборка: добавлен `mavenCentral()` и корректный процессор `org.spongepowered:mixin:0.8.5:processor`
+- Генерация `freecursor.refmap.json` включена
+
+## [1.2.6+mc1.21] - 2025-08-11
+### Fixed
+- Настроен корректный `annotationProcessor` для генерации `freecursor.refmap.json`
+- Добавлен репозиторий Fabric Maven
+- Включён `PortalMixin` с `@Redirect(method = "tickNausea", at = FIELD currentScreen)`
+
+## [1.2.5+mc1.21] - 2025-08-11
+### Fixed
+- Включён `PortalMixin` с корректным `refmap` (`freecursor.refmap.json`) как в рабочем моде
+- Инъекция `@Redirect(method = "tickNausea", at = @At(FIELD currentScreen))` работает на 1.21.4 (через refmap)
+
+## [1.2.4+mc1.21] - 2024-08-11
+### Fixed
+- Временно отключен PortalMixin для устранения крашей при запуске
+- Мод теперь работает без mixin, используя только базовую функциональность
+
+## [1.2.3+mc1.21] - 2024-08-11
+### Fixed
+- **Portal GUI Access**: Исправлена работа мода в портале с использованием правильного mixin
+- **Mixin Implementation**: Реализован mixin точно так же, как в allow-portal-guis
+- **@Redirect Method**: Используется @Redirect для перехвата currentScreen в методе tickNausea
+
+### Technical
+- Обновлен PortalMixin для корректной работы с Minecraft 1.21.4
+- Исправлены ошибки компиляции mixin
+- Улучшена совместимость с Fabric Loader 0.17.1
+
+## [1.2.2+mc1.21] - 2024-08-11
+
+### Fixed
+- **Portal GUI Access**: Исправлена работа мода в портале через PortalMixin
+- **Mixin Implementation**: Добавлен PortalMixin для обхода ограничений портала
+- **isInNetherPortal Override**: Принудительно возвращается false для работы GUI
+
+### Technical
+- Создан PortalMixin для ClientPlayerEntity
+- Добавлен в freecursor.mixins.json
+- Обновлена версия до 1.2.2+mc1.21
+
+## [1.2.1+mc1.21] - 2024-08-11
+
+### Fixed
+- **Portal Support**: Исправлена работа мода в портале
+- **GUI Access**: Убрана проверка на null экран для работы в портале
+- **Portal Mode**: Мод теперь работает в портале как allow-portal-guis
+
+### Technical
+- Убрана проверка `if (client.currentScreen == null)` в FreeCursorClient
+- Обновлена версия до 1.2.1+mc1.21
+
+## [1.2.0+mc1.21] - 2024-08-11
+
+### Added
+- **Portal Support**: Мод теперь работает в портале в ад
+- **GUI Access**: Возможность открывать экран мода в портале
+- **Enhanced Compatibility**: Поддержка всех версий Minecraft 1.21.x
+
+### Changed
+- **Version Format**: Обновлен формат версии до 1.2.0+mc1.21
+- **Portal Mode**: Экран мода открывается поверх экрана портала
+- **Manual Activation**: Экран открывается только при нажатии клавиши (не автоматически)
+
+### Technical
+- Убрана проверка на null экран для работы в портале
+- Обновлены зависимости для совместимости с Fabric Loader 0.17.1
+- Улучшена совместимость с Minecraft 1.21.4
+
+## [1.1.9+mc1.21.4] - 2024-08-11
+
+### Added
+- Initial release with basic functionality
+- Free cursor functionality
+- Configuration options
+- Key bindings support
+
+### Technical
+- Fabric mod framework
+- Client-side only implementation
+- Gradle build system
+
 ## [1.1.9+mc1.21.4] - 2024-08-09
 
 ### Changed
@@ -97,58 +190,4 @@ All notable changes to this project will be documented in this file.
 - Proper integration with Minecraft's built-in hideGui option
 
 ### Technical
-- Updated configuration system to use `simulateF1` instead of `showBlackScreen`
-- Added state management for original F1 setting
-- Updated localization keys and tooltips
-
-## [1.1.2+mc1.21.4] - 2024-08-09
-
-### Changed
-- **Replaced Interface Toggle**: Removed text overlay setting, replaced with black screen option
-- **New Black Screen Setting**: Option to show black screen that hides all game elements
-- **Clean Screen**: FreeCursor screen now always shows clean transparent overlay without any text
-- **Simplified Approach**: Removed complex mixins, using simple overlay system
-
-### Added
-- Black screen overlay option for complete game hiding
-- Simple and reliable screen covering system
-
-### Technical
-- Updated configuration system to use `showBlackScreen` instead of `showInterface`
-- Removed all mixins for better compatibility
-- Updated localization keys and tooltips
-
-## [1.1.1+mc1.21.4] - 2024-08-09
-
-### Added
-- **ModMenu Integration**: Added configuration screen accessible through ModMenu
-- **Interface Toggle Setting**: New option to show/hide interface overlay when cursor is freed
-- **Config System**: JSON-based configuration system for persistent settings
-- **Cloth Config Integration**: Modern configuration UI using Cloth Config
-- **Localization Updates**: Added new translation keys for config options
-
-### Changed
-- **Screen Logic**: Interface overlay now controlled by user setting (disabled by default)
-- **Dependencies**: Updated ModMenu and Cloth Config to latest versions
-- **Build System**: Added new repositories for dependencies
-
-### Technical
-- Added `FreeCursorConfig` class for configuration management
-- Added `FreeCursorModMenuIntegration` for ModMenu compatibility
-- Configuration saved to `config/freecursor.json`
-
-## [1.1.0+mc1.21.4] - 2024-08-09
-
-### Added
-- Initial release with clean cursor release screen
-- Updated versioning system with MC version suffix
-
-## [1.0.0] - 2024-08-09
-
-### Added
-- Initial release
-- F6 key binding to free cursor (configurable)
-- Clean transparent screen when cursor is freed
-- LMB/ESC to return to game
-- Localization support (English/Russian)
-- Client-side only mod
+- Updated configuration system to use `

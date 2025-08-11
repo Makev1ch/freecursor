@@ -32,23 +32,21 @@ public class FreeCursorClient implements ClientModInitializer {
         
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
             while (freeCursorKey.wasPressed()) {
-                if (client.currentScreen == null) {
-                    FreeCursorConfig config = FreeCursorConfig.getInstance();
-                    
-                    boolean originalHideGui = client.options.hudHidden;
-                    int originalMenuBackgroundBlurriness = client.options.getMenuBackgroundBlurriness().getValue();
-                    
-                    if (config.isSimulateF1()) {
-                        client.options.hudHidden = true;
-                    }
-                    
-                    if (config.isDisableBlur()) {
-                        client.options.getMenuBackgroundBlurriness().setValue(0);
-                    }
-                    
-                    FreeCursorScreen screen = new FreeCursorScreen(originalHideGui, originalMenuBackgroundBlurriness);
-                    client.setScreen(screen);
+                FreeCursorConfig config = FreeCursorConfig.getInstance();
+                
+                boolean originalHideGui = client.options.hudHidden;
+                int originalMenuBackgroundBlurriness = client.options.getMenuBackgroundBlurriness().getValue();
+                
+                if (config.isSimulateF1()) {
+                    client.options.hudHidden = true;
                 }
+                
+                if (config.isDisableBlur()) {
+                    client.options.getMenuBackgroundBlurriness().setValue(0);
+                }
+                
+                FreeCursorScreen screen = new FreeCursorScreen(originalHideGui, originalMenuBackgroundBlurriness);
+                client.setScreen(screen);
             }
             
             while (configKey.wasPressed()) {
