@@ -1,15 +1,14 @@
 # FreeCursor
-
+![screenshot from minecraft and the inscription freedom to the cursors on the bottom right from Makevich and Igr0man1y3_2 with love](https://cdn.modrinth.com/data/vcD9vl16/images/5fb448d9cee61718c19f8b8b97941ae7269d44a5.jpeg)
 **FreeCursor** is a Minecraft mod that allows you to temporarily free your mouse cursor during gameplay by pressing a key.
 
 ## Features
 
-- 🎮 **Customizable Key**: F6 by default, but can be changed in game settings
-- 🖱️ **Simple Cursor Release**: Press the key to free your cursor
-- ↩️ **Easy Return**: Click LMB or press ESC to return to the game
-- 🌍 **Localization**: Support for Russian and English languages
-- ⚡ **Client-side Only**: No server installation required
-- 🚪 **Portal Compatible**: Works even in Nether portals and loading screens
+   - **Customizable Key**: F6 by default, but can be changed in game settings
+   - **Simple Cursor Release**: Press the key to free your cursor
+   - **Easy Return**: Click LMB or press ESC to return to the game
+   - **Localization**: Support for Russian and English languages
+   - **Client-side Only**: No server installation required
 
 ## Installation
 
@@ -26,38 +25,26 @@
 
 ## Usage
 
-1. Press **F6** (or your configured key) during gameplay
-2. The cursor will be freed and you can move it outside the game window
+1. Press **F6** (or your configured key) → cursor unlocks.
+
 3. To return to the game:
    - Click **Left Mouse Button** anywhere
    - Or press **ESC**
 
+![demonstration of the mod's work](https://cdn.modrinth.com/data/vcD9vl16/images/bfb76ecf129468e38dd135ff766d98d0507d2706.gif)
+
 ## Configuration
 
-### Key Bindings
-To change keys:
-1. Open **Settings** → **Controls**
-2. Find the **FreeCursor** category
-3. Set your desired keys:
-   - **Free Cursor** (default: F6) - Release cursor
-   - **Open FreeCursor Config** (default: N) - Open mod settings
+### Key Rebinds
+>Settings > Controls > FreeCursor category
 
-### Mod Settings
-Access mod settings in two ways:
+### Mod Settings in two ways:
+   - Press N (default) in-game for built-in config, or
+   - Use ModMenu (if installed) to configure.
 
-#### Option 1: Built-in Config (No ModMenu required)
-1. Press **N** key (or your configured key) during gameplay
-2. Built-in settings screen will open
-3. Toggle settings and press **Done**
-
-#### Option 2: ModMenu Integration (if ModMenu is installed)
-1. Install [ModMenu](https://modrinth.com/mod/modmenu)
-2. Open **Mods** menu in game
-3. Find **FreeCursor** and click **Configure**
-
-#### Available Settings:
-- **Simulate F1**: Hide HUD elements when cursor is freed (just like pressing F1)
-- **Disable Blur**: Remove background blur when cursor is freed
+### Available Settings:
+1.   **Simulate F1** - Hide HUD elements when cursor is freed (just like pressing F1)
+2.   **Disable Blur** - Remove background blur when cursor is freed
 
 ## Compatibility
 
@@ -69,8 +56,8 @@ Access mod settings in two ways:
 ## Versioning
 
 This mod follows semantic versioning with Minecraft version suffix:
-- Format: `1.1.x+mc1.21.4` where x increments with each update
-- Current version: `1.1.9+mc1.21.4`
+- Format: `1.2.x+mc1.21.4` where x increments with each update
+- Current version: `1.2.0+mc1.21.4`
 
 ## Development
 
