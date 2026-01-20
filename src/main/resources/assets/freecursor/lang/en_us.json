@@ -1,6 +1,7 @@
 {
   "key.freecursor.toggle": "Free Cursor",
   "key.freecursor.config": "Open FreeCursor Config",
+  "key.category.freecursor.freecursor": "FreeCursor",
   "category.freecursor": "FreeCursor",
   "screen.freecursor.title": "FreeCursor",
   "screen.freecursor.instruction": "Cursor is now free! Click or press ESC to return to game",

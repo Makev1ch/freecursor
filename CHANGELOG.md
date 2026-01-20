@@ -24,7 +24,7 @@ All notable changes to this project will be documented in this file.
 ## [1.2.5+mc1.21] - 2025-08-11
 ### Fixed
 - Включён `PortalMixin` с корректным `refmap` (`freecursor.refmap.json`) как в рабочем моде
-- Инъекция `@Redirect(method = "tickNausea", at = @At(FIELD currentScreen))` работает на 1.21.4 (через refmap)
+- Инъекция `@Redirect(method = "tickNausea", at = @At(FIELD currentScreen))` работает на 1.21.x (через refmap)
 
 ## [1.2.4+mc1.21] - 2024-08-11
 ### Fixed
@@ -38,7 +38,7 @@ All notable changes to this project will be documented in this file.
 - **@Redirect Method**: Используется @Redirect для перехвата currentScreen в методе tickNausea
 
 ### Technical
-- Обновлен PortalMixin для корректной работы с Minecraft 1.21.4
+- Обновлен PortalMixin для корректной работы с Minecraft 1.21.x
 - Исправлены ошибки компиляции mixin
 - Улучшена совместимость с Fabric Loader 0.17.1
 
@@ -80,9 +80,9 @@ All notable changes to this project will be documented in this file.
 ### Technical
 - Убрана проверка на null экран для работы в портале
 - Обновлены зависимости для совместимости с Fabric Loader 0.17.1
-- Улучшена совместимость с Minecraft 1.21.4
+- Улучшена совместимость с Minecraft 1.21.x
 
-## [1.1.9+mc1.21.4] - 2024-08-11
+## [1.1.9+mc1.21] - 2024-08-11
 
 ### Added
 - Initial release with basic functionality
@@ -95,7 +95,7 @@ All notable changes to this project will be documented in this file.
 - Client-side only implementation
 - Gradle build system
 
-## [1.1.9+mc1.21.4] - 2024-08-09
+## [1.1.9+mc1.21] - 2024-08-09
 
 ### Changed
 - **Code Optimization**: Cleaned and optimized all Java source files
@@ -109,7 +109,7 @@ All notable changes to this project will be documented in this file.
 - Optimized import statements across all files
 - Enhanced code readability through consistent formatting
 
-## [1.1.8+mc1.21.4] - 2024-08-09
+## [1.1.8+mc1.21] - 2024-08-09
 
 ### Changed
 - **Authors Section**: Moved Igr0man1y3_2 to authors list instead of description
@@ -120,7 +120,7 @@ All notable changes to this project will be documented in this file.
 - Updated fabric.mod.json authors array to include both Makev1ch and Igr0man1y3_2
 - Enhanced README with proper authors and license information in Development section
 
-## [1.1.7+mc1.21.4] - 2024-08-09
+## [1.1.7+mc1.21] - 2024-08-09
 
 ### Added
 - **Issues Link**: Added proper bug tracker link in ModMenu for easy issue reporting
@@ -138,7 +138,7 @@ All notable changes to this project will be documented in this file.
 - License change to GPL-2.0-only for better open source compatibility
 - Enhanced metadata with proper attribution
 
-## [1.1.6+mc1.21.4] - 2024-08-09
+## [1.1.6+mc1.21] - 2024-08-09
 
 ### Changed
 - **Improved Config UI**: Title is now displayed as regular text instead of a button
@@ -150,7 +150,7 @@ All notable changes to this project will be documented in this file.
 - Removed unused Cloth Config dependencies from ModMenu integration
 - Enhanced visual consistency across all config access methods
 
-## [1.1.5+mc1.21.4] - 2024-08-09
+## [1.1.5+mc1.21] - 2024-08-09
 
 ### Added
 - **Built-in Config Screen**: Independent settings screen accessible without ModMenu
@@ -164,7 +164,7 @@ All notable changes to this project will be documented in this file.
 - Maintained full compatibility with existing ModMenu integration
 - Enhanced key binding system with dual key support
 
-## [1.1.4+mc1.21.4] - 2024-08-09
+## [1.1.4+mc1.21] - 2024-08-09
 
 ### Added
 - **Disable Blur Setting**: New option to remove background blur when cursor is freed
@@ -176,7 +176,7 @@ All notable changes to this project will be documented in this file.
 - Integration with Minecraft's `MenuBackgroundBlurriness` option
 - Automatic restoration of user's original blur preferences
 
-## [1.1.3+mc1.21.4] - 2024-08-09
+## [1.1.3+mc1.21] - 2024-08-09
 
 ### Changed
 - **Replaced Black Screen**: Removed black screen option, replaced with F1 simulation

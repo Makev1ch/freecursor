@@ -10,7 +10,7 @@ if [ $# -eq 0 ]; then
     exit 1
 fi
 
-NEW_VERSION="$1+mc1.21.4+"
+NEW_VERSION="$1+mc1.21.9+"
 
 echo "Обновление версии мода до $NEW_VERSION..."
 
@@ -27,4 +27,4 @@ if grep -q "^\*\*Current version\*\*" README.md; then
 fi
 
 echo "Версия успешно обновлена до $NEW_VERSION"
-echo "Соберите проект: ./gradlew build"
+echo "Соберите проект: ./gradlew build (в Git Bash / WSL) или gradle build (если Gradle установлен)"

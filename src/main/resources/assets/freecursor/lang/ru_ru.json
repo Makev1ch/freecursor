@@ -1,6 +1,7 @@
 {
   "key.freecursor.toggle": "Освободить курсор",
   "key.freecursor.config": "Открыть настройки FreeCursor",
+  "key.category.freecursor.freecursor": "FreeCursor",
   "category.freecursor": "FreeCursor",
   "screen.freecursor.title": "FreeCursor",
   "screen.freecursor.instruction": "Курсор освобожден! Кликните или нажмите ESC для возврата в игру",

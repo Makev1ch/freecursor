@@ -4,11 +4,14 @@ import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
 import net.minecraft.client.option.KeyBinding;
+import net.minecraft.client.option.KeyBinding.Category;
 import net.minecraft.client.util.InputUtil;
+import net.minecraft.util.Identifier;
 import org.lwjgl.glfw.GLFW;
 
 public class FreeCursorClient implements ClientModInitializer {
-    
+    private static final Category FREECURSOR_CATEGORY = Category.create(Identifier.of("freecursor", "freecursor"));
+
     private static KeyBinding freeCursorKey;
     private static KeyBinding configKey;
     
@@ -16,19 +19,23 @@ public class FreeCursorClient implements ClientModInitializer {
     public void onInitializeClient() {
         FreeCursor.LOGGER.info("FreeCursor client initialized!");
         
-        freeCursorKey = KeyBindingHelper.registerKeyBinding(new KeyBinding(
-            "key.freecursor.toggle",
-            InputUtil.Type.KEYSYM,
-            GLFW.GLFW_KEY_F6,
-            "category.freecursor"
-        ));
+        freeCursorKey = KeyBindingHelper.registerKeyBinding(
+            new KeyBinding(
+                "key.freecursor.toggle",
+                InputUtil.Type.KEYSYM,
+                GLFW.GLFW_KEY_F6,
+                FREECURSOR_CATEGORY
+            )
+        );
         
-        configKey = KeyBindingHelper.registerKeyBinding(new KeyBinding(
-            "key.freecursor.config",
-            InputUtil.Type.KEYSYM,
-            GLFW.GLFW_KEY_N,
-            "category.freecursor"
-        ));
+        configKey = KeyBindingHelper.registerKeyBinding(
+            new KeyBinding(
+                "key.freecursor.config",
+                InputUtil.Type.KEYSYM,
+                GLFW.GLFW_KEY_N,
+                FREECURSOR_CATEGORY
+            )
+        );
         
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
             while (freeCursorKey.wasPressed()) {
