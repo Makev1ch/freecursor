@@ -1,5 +1,4 @@
 # FreeCursor
-![screenshot from minecraft and the inscription freedom to the cursors on the bottom right from Makevich and Igr0man1y3_2 with love](https://cdn.modrinth.com/data/vcD9vl16/images/5fb448d9cee61718c19f8b8b97941ae7269d44a5.jpeg)
 **FreeCursor** is a Minecraft mod that allows you to temporarily free your mouse cursor during gameplay by pressing a key.
 
 ## Features
