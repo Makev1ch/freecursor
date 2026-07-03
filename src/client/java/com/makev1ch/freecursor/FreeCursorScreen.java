@@ -52,7 +52,7 @@ public class FreeCursorScreen extends Screen {
 
     private void closeScreen() {
         if (this.minecraft != null) {
-            this.minecraft.setScreen(null);
+            this.minecraft.gui.setScreen(null);
         }
     }
 
@@ -65,7 +65,7 @@ public class FreeCursorScreen extends Screen {
     public void removed() {
         if (this.minecraft != null) {
             FreeCursorConfig config = FreeCursorConfig.getInstance();
-            if (config.isSimulateF1()) this.minecraft.options.hideGui = originalHideGui;
+            if (config.isSimulateF1() && this.minecraft.gui.hud.isHidden() != originalHideGui) this.minecraft.gui.hud.toggle();
             if (config.isDisableBlur()) this.minecraft.options.menuBackgroundBlurriness().set(originalMenuBackgroundBlurriness);
         }
         super.removed();

@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.12+mc26.2] - 2026-07-03
+### Changed
+- **Minecraft 26.2 support**: Мод перенесён на Minecraft 26.2 (одна сборка на всё семейство 26.2.x, включая будущие 26.2.1, 26.2.2 и т.д.)
+- Функциональность, поведение и UX не изменились: освобождение курсора по клавише (F6 по умолчанию), возврат по ЛКМ/ESC, настройки Simulate F1 и Disable Blur, работа в портале, встроенный конфиг (N) и интеграция с ModMenu
+
+### Fixed
+- Устранено мигание экрана при активации мода на 26.2. Причина — `Minecraft.setScreenAndShow(...)` в 26.2 после установки экрана принудительно вызывает внеочередной кадр (`renderFrame(false)`). Заменено на `Minecraft.gui.setScreen(...)` — точный эквивалент прежнего `Minecraft.setScreen(...)` из 26.1 (освобождение/захват курсора, `init()` экрана сохранены), но без лишнего кадра. Поведение снова идентично 26.1.
+
+### Technical
+- Зависимости обновлены под 26.2: `minecraft` `~26.2`, Fabric API `0.154.0+26.2`, `fabric-key-mapping-api-v1` `2.0.5+e2bdee789e`, ModMenu `20.0.0-beta.4`
+- Fabric Loader `0.19.3`, Loom `1.17.13`, Java 25 — без изменений (уже актуальны для 26.2)
+- Адаптация под Mojang-маппинги 26.2 (рефакторинг GUI-слоя игры); поведение полностью сохранено:
+  - `Minecraft.setScreen(...)` → `Minecraft.gui.setScreen(...)`
+  - текущий экран `Minecraft.screen` → `Minecraft.gui.screen()`
+  - состояние скрытия HUD (Simulate F1) перенесено из `Options.hideGui` в `Minecraft.gui.hud` (`isHidden()` / `toggle()`)
+- Графический слой 26.2 (Vulkan/OpenGL; render-state API `GuiGraphicsExtractor`/`extractRenderState`) изменений мода не потребовал — мод не зависит от графического бэкенда
+
 ## [1.2.11+mc26.1] - 2026-07-03
 ### Changed
 - **Minecraft 26.1 support**: Мод обновлён для работы на Minecraft 26.1, 26.1.1 и 26.1.2 (одна сборка на всё семейство 26.1)

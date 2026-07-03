@@ -41,11 +41,11 @@ public class FreeCursorClient implements ClientModInitializer {
             while (freeCursorKey.consumeClick()) {
                 FreeCursorConfig config = FreeCursorConfig.getInstance();
 
-                boolean originalHideGui = client.options.hideGui;
+                boolean originalHideGui = client.gui.hud.isHidden();
                 int originalMenuBackgroundBlurriness = client.options.menuBackgroundBlurriness().get();
 
-                if (config.isSimulateF1()) {
-                    client.options.hideGui = true;
+                if (config.isSimulateF1() && !client.gui.hud.isHidden()) {
+                    client.gui.hud.toggle();
                 }
 
                 if (config.isDisableBlur()) {
@@ -53,11 +53,11 @@ public class FreeCursorClient implements ClientModInitializer {
                 }
 
                 FreeCursorScreen screen = new FreeCursorScreen(originalHideGui, originalMenuBackgroundBlurriness);
-                client.setScreen(screen);
+                client.gui.setScreen(screen);
             }
 
             while (configKey.consumeClick()) {
-                client.setScreen(new FreeCursorConfigScreen(client.screen));
+                client.gui.setScreen(new FreeCursorConfigScreen(client.gui.screen()));
             }
         });
     }

@@ -33,12 +33,12 @@ dependencies {
     implementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
     implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
-    // Key Mapping API is no longer bundled in the fabric-api umbrella on 26.1 — add it explicitly.
+    // Key Mapping API is no longer bundled in the fabric-api umbrella since 26.1 — add it explicitly.
     // (Formerly fabric-key-binding-api-v1; renamed to fabric-key-mapping-api-v1 as of 26.1.)
     implementation "net.fabricmc.fabric-api:fabric-key-mapping-api-v1:${project.fabric_keymapping_version}"
 
     // ModMenu (optional at runtime) — used only for the config screen entrypoint
-    compileOnly("com.terraformersmc:modmenu:18.0.0-beta.1")
+    compileOnly("com.terraformersmc:modmenu:20.0.0-beta.4")
 }
 
 processResources {

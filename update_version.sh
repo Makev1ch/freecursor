@@ -10,7 +10,7 @@ if [ $# -eq 0 ]; then
     exit 1
 fi
 
-NEW_VERSION="$1+mc26.1"
+NEW_VERSION="$1+mc26.2"
 
 echo "Обновление версии мода до $NEW_VERSION..."
 
