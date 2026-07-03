@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.11+mc26.1] - 2026-07-03
+### Changed
+- **Minecraft 26.1 support**: Мод обновлён для работы на Minecraft 26.1, 26.1.1 и 26.1.2 (одна сборка на всё семейство 26.1)
+- Функциональность не изменилась: освобождение курсора по клавише (F6 по умолчанию), возврат по ЛКМ/ESC, настройки Simulate F1 и Disable Blur, работа в портале, встроенный конфиг (N) и интеграция с ModMenu
+
+### Technical
+- Переход с Yarn на официальные Mojang-маппинги (Yarn прекращён начиная с 26.1)
+- Плагин сборки `fabric-loom` → `net.fabricmc.fabric-loom` (Loom 1.17.13), Gradle 9.5.1
+- Java 21 → Java 25
+- Fabric Loader 0.19.3, Fabric API 0.154.0+26.1.2, ModMenu 18.0.0-beta.1
+- `PortalMixin` переведён на официальные имена; refmap больше не требуется (26.1 не обфусцирована)
+- Обновлены зависимости версий: `minecraft` `~26.1`, `fabricloader` `>=0.19.3`, `java` `>=25`
+
 ## [1.2.9+mc1.21] - 2025-08-11
 ### Fixed
 - В `freecursor.mixins.json` исправлено имя refmap на `client-freecursor.refmap.json`

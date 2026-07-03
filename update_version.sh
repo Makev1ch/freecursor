@@ -2,15 +2,15 @@
 
 # Скрипт для обновления версии мода FreeCursor
 # Использование: ./update_version.sh <новая_версия>
-# Пример: ./update_version.sh 1.2.11
+# Пример: ./update_version.sh 1.2.12
 
 if [ $# -eq 0 ]; then
     echo "Использование: $0 <новая_версия>"
-    echo "Пример: $0 1.2.11"
+    echo "Пример: $0 1.2.12"
     exit 1
 fi
 
-NEW_VERSION="$1+mc1.21.9+"
+NEW_VERSION="$1+mc26.1"
 
 echo "Обновление версии мода до $NEW_VERSION..."
 

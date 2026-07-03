@@ -27,13 +27,10 @@
       "com.makev1ch.freecursor.FreeCursorModMenuIntegration"
     ]
   },
-  "mixins": [
-    "freecursor.mixins.json"
-  ],
   "depends": {
-    "fabricloader": ">=0.16.0",
-    "minecraft": ">=1.21.9 <1.21.12",
-    "java": ">=21",
+    "fabricloader": ">=0.19.3",
+    "minecraft": "~26.1",
+    "java": ">=25",
     "fabric-api": "*"
   },
   "suggests": {

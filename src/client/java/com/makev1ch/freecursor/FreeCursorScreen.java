@@ -1,10 +1,10 @@
 package com.makev1ch.freecursor;
 
-import net.minecraft.client.gui.Click;
-import net.minecraft.client.gui.DrawContext;
-import net.minecraft.client.gui.screen.Screen;
-import net.minecraft.client.input.KeyInput;
-import net.minecraft.text.Text;
+import net.minecraft.client.gui.GuiGraphicsExtractor;
+import net.minecraft.client.gui.screens.Screen;
+import net.minecraft.client.input.KeyEvent;
+import net.minecraft.client.input.MouseButtonEvent;
+import net.minecraft.network.chat.Component;
 import org.lwjgl.glfw.GLFW;
 
 public class FreeCursorScreen extends Screen {
@@ -12,45 +12,62 @@ public class FreeCursorScreen extends Screen {
     private final int originalMenuBackgroundBlurriness;
 
     public FreeCursorScreen(boolean originalHideGui, int originalMenuBackgroundBlurriness) {
-        super(Text.translatable("screen.freecursor.title"));
+        super(Component.translatable("screen.freecursor.title"));
         this.originalHideGui = originalHideGui;
         this.originalMenuBackgroundBlurriness = originalMenuBackgroundBlurriness;
     }
 
     @Override
-    public void render(DrawContext context, int mouseX, int mouseY, float delta) {
-        super.render(context, mouseX, mouseY, delta);
+    public void extractRenderState(GuiGraphicsExtractor graphics, int mouseX, int mouseY, float delta) {
+        super.extractRenderState(graphics, mouseX, mouseY, delta);
     }
 
     @Override
-    public boolean shouldPause() {
+    public boolean isPauseScreen() {
         return false;
     }
 
     @Override
-    public boolean mouseClicked(Click click, boolean doubled) {
-        if (click.button() == 0) {
-            closeScreen();
-            return true;
-        }
-        return super.mouseClicked(click, doubled);
+    public boolean isAllowedInPortal() {
+        return true;
     }
 
     @Override
-    public boolean keyPressed(KeyInput input) {
-        if (input.key() == GLFW.GLFW_KEY_ESCAPE) {
+    public boolean mouseClicked(MouseButtonEvent event, boolean doubled) {
+        if (event.button() == 0) {
             closeScreen();
             return true;
         }
-        return super.keyPressed(input);
+        return super.mouseClicked(event, doubled);
+    }
+
+    @Override
+    public boolean keyPressed(KeyEvent event) {
+        if (event.key() == GLFW.GLFW_KEY_ESCAPE) {
+            closeScreen();
+            return true;
+        }
+        return super.keyPressed(event);
     }
 
     private void closeScreen() {
-        if (this.client != null) {
-            FreeCursorConfig config = FreeCursorConfig.getInstance();
-            if (config.isSimulateF1()) this.client.options.hudHidden = originalHideGui;
-            if (config.isDisableBlur()) this.client.options.getMenuBackgroundBlurriness().setValue(originalMenuBackgroundBlurriness);
-            this.client.setScreen(null);
+        if (this.minecraft != null) {
+            this.minecraft.setScreen(null);
         }
+    }
+
+    // Restore the options here rather than in closeScreen(): removed() is called by Minecraft
+    // whenever this screen is torn down for ANY reason — click, ESC, or the game swapping the
+    // screen out from under us (e.g. going through a portal into another dimension, which loads
+    // a new world and replaces the current screen without routing through closeScreen()). This
+    // prevents hideGui/blur from getting "stuck" after a dimension change.
+    @Override
+    public void removed() {
+        if (this.minecraft != null) {
+            FreeCursorConfig config = FreeCursorConfig.getInstance();
+            if (config.isSimulateF1()) this.minecraft.options.hideGui = originalHideGui;
+            if (config.isDisableBlur()) this.minecraft.options.menuBackgroundBlurriness().set(originalMenuBackgroundBlurriness);
+        }
+        super.removed();
     }
 }
