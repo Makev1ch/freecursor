@@ -11,7 +11,7 @@
 - Return via LMB or ESC
 - HUD hiding (Simulate F1)
 - Background blur removal
-- English and Russian localization
+- Full localization for 14 languages: English (en_us), Russian (ru_ru), Ukrainian (uk_ua), French (fr_fr), German (de_de), Spanish (es_es), Brazilian Portuguese (pt_br), Italian (it_it), Polish (pl_pl), Turkish (tr_tr), Simplified Chinese (zh_cn), Traditional Chinese (zh_tw), Japanese (ja_jp), Korean (ko_kr)
 
 ## Usage
 
