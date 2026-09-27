@@ -3,7 +3,7 @@
   "id": "freecursor",
   "version": "${version}",
   "name": "FreeCursor",
-  "description": "Мод для освобождения курсора по нажатию установленной клавиши. Позволяет освободить курсор мыши и вернуть его обратно в игру.",
+  "description": "A mod for freeing the cursor by pressing a configured key. Allows you to release the mouse cursor and return it back to the game.",
   "authors": [
     "Makev1ch",
     "Igr0man1y3_2"
