@@ -1,0 +1,14 @@
+{
+  "key.freecursor.toggle": "커서 해제",
+  "key.freecursor.config": "FreeCursor 설정 열기",
+  "key.category.freecursor.freecursor": "FreeCursor",
+  "category.freecursor": "FreeCursor",
+  "screen.freecursor.title": "FreeCursor",
+  "screen.freecursor.instruction": "커서가 해제되었습니다! 클릭하거나 ESC를 눌러 게임으로 돌아가세요",
+  "config.freecursor.title": "FreeCursor 설정",
+  "config.freecursor.category.general": "일반",
+  "config.freecursor.simulate_f1": "F1 시뮬레이션",
+  "config.freecursor.simulate_f1.tooltip": "커서가 해제되었을 때 F1을 누른 것처럼 HUD 요소를 숨깁니다",
+  "config.freecursor.disable_blur": "흐림 끄기",
+  "config.freecursor.disable_blur.tooltip": "커서가 해제되었을 때 배경 흐림을 제거하고, 게임으로 돌아오면 원래 흐림으로 복원합니다"
+}

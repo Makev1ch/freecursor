@@ -1,0 +1,14 @@
+{
+  "key.freecursor.toggle": "Звільнити курсор",
+  "key.freecursor.config": "Відкрити налаштування FreeCursor",
+  "key.category.freecursor.freecursor": "FreeCursor",
+  "category.freecursor": "FreeCursor",
+  "screen.freecursor.title": "FreeCursor",
+  "screen.freecursor.instruction": "Курсор вільний! Клікніть або натисніть ESC, щоб повернутися до гри",
+  "config.freecursor.title": "Налаштування FreeCursor",
+  "config.freecursor.category.general": "Загальні",
+  "config.freecursor.simulate_f1": "Імітувати F1",
+  "config.freecursor.simulate_f1.tooltip": "Ховати елементи HUD, коли курсор вільний, так само як при натисканні F1",
+  "config.freecursor.disable_blur": "Вимкнути розмиття",
+  "config.freecursor.disable_blur.tooltip": "Прибирати розмиття фону, коли курсор вільний, відновлюючи початкове розмиття після повернення до гри"
+}

@@ -1,0 +1,14 @@
+{
+  "key.freecursor.toggle": "Libérer le curseur",
+  "key.freecursor.config": "Ouvrir la configuration de FreeCursor",
+  "key.category.freecursor.freecursor": "FreeCursor",
+  "category.freecursor": "FreeCursor",
+  "screen.freecursor.title": "FreeCursor",
+  "screen.freecursor.instruction": "Le curseur est libéré ! Cliquez ou appuyez sur Échap pour revenir au jeu",
+  "config.freecursor.title": "Configuration de FreeCursor",
+  "config.freecursor.category.general": "Général",
+  "config.freecursor.simulate_f1": "Simuler F1",
+  "config.freecursor.simulate_f1.tooltip": "Masquer les éléments de l'ATH lorsque le curseur est libéré, comme en appuyant sur F1",
+  "config.freecursor.disable_blur": "Désactiver le flou",
+  "config.freecursor.disable_blur.tooltip": "Supprimer le flou d'arrière-plan lorsque le curseur est libéré, et le restaurer au retour dans le jeu"
+}

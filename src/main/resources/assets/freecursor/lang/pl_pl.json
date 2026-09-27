@@ -1,0 +1,14 @@
+{
+  "key.freecursor.toggle": "Uwolnij kursor",
+  "key.freecursor.config": "Otwórz konfigurację FreeCursor",
+  "key.category.freecursor.freecursor": "FreeCursor",
+  "category.freecursor": "FreeCursor",
+  "screen.freecursor.title": "FreeCursor",
+  "screen.freecursor.instruction": "Kursor jest teraz wolny! Kliknij lub naciśnij ESC, aby wrócić do gry",
+  "config.freecursor.title": "Konfiguracja FreeCursor",
+  "config.freecursor.category.general": "Ogólne",
+  "config.freecursor.simulate_f1": "Symuluj F1",
+  "config.freecursor.simulate_f1.tooltip": "Ukrywa elementy HUD, gdy kursor jest uwolniony, tak jak po naciśnięciu F1",
+  "config.freecursor.disable_blur": "Wyłącz rozmycie",
+  "config.freecursor.disable_blur.tooltip": "Usuwa rozmycie tła, gdy kursor jest uwolniony, przywracając je po powrocie do gry"
+}

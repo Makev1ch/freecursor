@@ -1,0 +1,14 @@
+{
+  "key.freecursor.toggle": "Liberar cursor",
+  "key.freecursor.config": "Abrir la configuración de FreeCursor",
+  "key.category.freecursor.freecursor": "FreeCursor",
+  "category.freecursor": "FreeCursor",
+  "screen.freecursor.title": "FreeCursor",
+  "screen.freecursor.instruction": "¡El cursor está libre! Haz clic o pulsa ESC para volver al juego",
+  "config.freecursor.title": "Configuración de FreeCursor",
+  "config.freecursor.category.general": "General",
+  "config.freecursor.simulate_f1": "Simular F1",
+  "config.freecursor.simulate_f1.tooltip": "Oculta los elementos del HUD cuando el cursor está libre, igual que al pulsar F1",
+  "config.freecursor.disable_blur": "Desactivar desenfoque",
+  "config.freecursor.disable_blur.tooltip": "Elimina el desenfoque del fondo cuando el cursor está libre y lo restaura al volver al juego"
+}

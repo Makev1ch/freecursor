@@ -1,0 +1,14 @@
+{
+  "key.freecursor.toggle": "カーソルを解放",
+  "key.freecursor.config": "FreeCursorの設定を開く",
+  "key.category.freecursor.freecursor": "FreeCursor",
+  "category.freecursor": "FreeCursor",
+  "screen.freecursor.title": "FreeCursor",
+  "screen.freecursor.instruction": "カーソルが解放されました！クリックまたはESCキーでゲームに戻ります",
+  "config.freecursor.title": "FreeCursorの設定",
+  "config.freecursor.category.general": "一般",
+  "config.freecursor.simulate_f1": "F1を再現",
+  "config.freecursor.simulate_f1.tooltip": "カーソル解放時にF1キーを押したときと同じようにHUDを非表示にする",
+  "config.freecursor.disable_blur": "ぼかしを無効化",
+  "config.freecursor.disable_blur.tooltip": "カーソル解放時に背景のぼかしを解除し、ゲームに戻ると元のぼかしに戻す"
+}

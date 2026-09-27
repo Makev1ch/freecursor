@@ -1,0 +1,14 @@
+{
+  "key.freecursor.toggle": "Cursor freigeben",
+  "key.freecursor.config": "FreeCursor-Konfiguration öffnen",
+  "key.category.freecursor.freecursor": "FreeCursor",
+  "category.freecursor": "FreeCursor",
+  "screen.freecursor.title": "FreeCursor",
+  "screen.freecursor.instruction": "Der Cursor ist jetzt frei! Klicke oder drücke ESC, um zum Spiel zurückzukehren",
+  "config.freecursor.title": "FreeCursor-Konfiguration",
+  "config.freecursor.category.general": "Allgemein",
+  "config.freecursor.simulate_f1": "F1 simulieren",
+  "config.freecursor.simulate_f1.tooltip": "HUD-Elemente ausblenden, wenn der Cursor freigegeben ist, genau wie beim Drücken von F1",
+  "config.freecursor.disable_blur": "Unschärfe deaktivieren",
+  "config.freecursor.disable_blur.tooltip": "Hintergrundunschärfe entfernen, wenn der Cursor freigegeben ist, und beim Zurückkehren ins Spiel wiederherstellen"
+}

@@ -1,0 +1,14 @@
+{
+  "key.freecursor.toggle": "释放光标",
+  "key.freecursor.config": "打开 FreeCursor 配置",
+  "key.category.freecursor.freecursor": "FreeCursor",
+  "category.freecursor": "FreeCursor",
+  "screen.freecursor.title": "FreeCursor",
+  "screen.freecursor.instruction": "光标已释放！点击或按 ESC 返回游戏",
+  "config.freecursor.title": "FreeCursor 配置",
+  "config.freecursor.category.general": "通用",
+  "config.freecursor.simulate_f1": "模拟 F1",
+  "config.freecursor.simulate_f1.tooltip": "释放光标时隐藏 HUD 元素，如同按下 F1",
+  "config.freecursor.disable_blur": "禁用模糊",
+  "config.freecursor.disable_blur.tooltip": "释放光标时移除背景模糊，返回游戏时恢复原有模糊"
+}

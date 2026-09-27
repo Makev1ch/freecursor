@@ -1,0 +1,14 @@
+{
+  "key.freecursor.toggle": "İmleci serbest bırak",
+  "key.freecursor.config": "FreeCursor yapılandırmasını aç",
+  "key.category.freecursor.freecursor": "FreeCursor",
+  "category.freecursor": "FreeCursor",
+  "screen.freecursor.title": "FreeCursor",
+  "screen.freecursor.instruction": "İmleç artık serbest! Oyuna dönmek için tıklayın veya ESC'ye basın",
+  "config.freecursor.title": "FreeCursor Yapılandırması",
+  "config.freecursor.category.general": "Genel",
+  "config.freecursor.simulate_f1": "F1'i simüle et",
+  "config.freecursor.simulate_f1.tooltip": "İmleç serbest bırakıldığında HUD öğelerini gizler, tıpkı F1'e basıldığı gibi",
+  "config.freecursor.disable_blur": "Bulanıklığı devre dışı bırak",
+  "config.freecursor.disable_blur.tooltip": "İmleç serbest bırakıldığında arka plan bulanıklığını kaldırır, oyuna dönüldüğünde özgün bulanıklığı geri yükler"
+}
