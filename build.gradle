@@ -38,7 +38,7 @@ dependencies {
     implementation "net.fabricmc.fabric-api:fabric-key-mapping-api-v1:${project.fabric_keymapping_version}"
 
     // ModMenu (optional at runtime) — used only for the config screen entrypoint
-    compileOnly("com.terraformersmc:modmenu:20.0.0-beta.4")
+    compileOnly("com.terraformersmc:modmenu:21.0.0")
 }
 
 processResources {

@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.13+mc26.3] - 2026-09-27
+### Changed
+- **Minecraft 26.3 support**: Мод перенесён на Minecraft 26.3 (одна сборка на всё семейство 26.3.x)
+- Функциональность, поведение и UX не изменились: освобождение курсора по клавише (F6 по умолчанию), возврат по ЛКМ/ESC, настройки Simulate F1 и Disable Blur, работа в портале, встроенный конфиг (N) и интеграция с ModMenu. Намеренных изменений поведения нет — это чистый перенос на 26.3
+
+### Technical
+- Ввод и оконная подсистема 26.3 переведены с GLFW на SDL3 (`lwjgl-glfw` больше не поставляется с игрой, вместо него `lwjgl-sdl`), поэтому код ввода переведён на SDL-абстракции Minecraft:
+  - `InputConstants.Type.KEYSYM` → `InputConstants.Type.KEYBOARD`
+  - `GLFW.GLFW_KEY_F6` (295) → `InputConstants.KEY_F6` (63), `GLFW.GLFW_KEY_N` (78) → `InputConstants.KEY_N` (17), `GLFW.GLFW_KEY_ESCAPE` (256) → `InputConstants.KEY_ESCAPE` (41) — физические позиции клавиш теперь представлены SDL-сканкодами (USB HID)
+  - `MouseButtonEvent.button() == 0` → `== InputConstants.MOUSE_BUTTON_LEFT`: в SDL кнопки мыши нумеруются с единицы (ЛКМ = 1, СКМ = 2, ПКМ = 3), тогда как в GLFW ЛКМ была 0. Без этой правки возврат в игру по ЛКМ перестал бы срабатывать
+- Прямые вызовы SDL не добавлялись: используются только абстракции Minecraft/Fabric (`InputConstants`, `KeyMapping`, `Screen`); собственный разбор событий SDL не реализовывался
+- Жизненный цикл экрана (`isPauseScreen`, `isAllowedInPortal`, `removed`, `extractRenderState`) и управление курсором в 26.3 не изменились — правок не потребовали
+- Имена привязок клавиш остались прежними (`key.keyboard.f6`, `key.keyboard.n`), поэтому уже сохранённые в `options.txt` переназначения игроков продолжают работать без сброса
+- Зависимости обновлены под 26.3: `minecraft` `~26.3`, Fabric API `0.161.0+26.3`, `fabric-key-mapping-api-v1` `2.0.8+3434d6d95d`, ModMenu `21.0.0` — теперь стабильный релиз (ранее `20.0.0-beta.4`)
+- Fabric Loader `0.19.5`, Loom `1.18.2`, Gradle `9.8.0` (Loom 1.18.2 требует Gradle ≥ 9.7.0), Java 25 — без изменений
+
 ## [1.2.12+mc26.2] - 2026-07-03
 ### Changed
 - **Minecraft 26.2 support**: Мод перенесён на Minecraft 26.2 (одна сборка на всё семейство 26.2.x, включая будущие 26.2.1, 26.2.2 и т.д.)
